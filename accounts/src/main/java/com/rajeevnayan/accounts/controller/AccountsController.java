@@ -17,7 +17,6 @@ import java.awt.*;
 @AllArgsConstructor
 public class AccountsController {
     private IAccountsService iAccountsService;
-
     @PostMapping("/create")
     public ResponseEntity<ResponseDto> createAccount(@RequestBody CustomerDto customerDto){
         iAccountsService.createAccount(customerDto);
